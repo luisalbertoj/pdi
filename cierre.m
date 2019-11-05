@@ -1,8 +1,8 @@
-function APERTURA = apertura(A, B)
+function CIERRE = cierre(A, B)
 %UNTITLED3 Summary of this function goes here
 %   Detailed explanation goes here
 
-APERTURA = (dilatacion(erosion(A, B), B));
+CIERRE = (erosion(dilatacion(A,B),B));
 
 end
 
