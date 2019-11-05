@@ -1,0 +1,16 @@
+function orgfi = erosion(f)
+persistent lut
+
+if isempty(lut)
+    lut = makelut(@erosionar,3);
+end
+orgfi = applylut(f, lut);
+
+end
+function l = erosionar(area, B)
+l = area(1,1) && area(1,3) && area(2,2) && area(3,1) && area(3,3);
+[m, n] = size(b);
+for i=0:m
+    for j=1:n
+end
+
